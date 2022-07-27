@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Primary Meta Tags -->
+<title>TITCH's Portofolio</title>
+<meta name="title" content="TITCH's Portofolio |">
+<meta name="description" content="Welcome ! Here you can find all of TITCH.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://titch.github.io">
+<meta property="og:title" content="TITCH's Portofolio">
+<meta property="og:description" content="Welcome ! Here you can find all of TITCH.">
+<meta property="og:image" content="logo_titch_corp.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://titch.github.io">
+<meta property="twitter:title" content="TITCH's Portofolio">
+<meta property="twitter:description" content="Welcome ! Here you can find all of TITCH.">
+<meta property="twitter:image" content="logo_titch_corp.png">
+
+<!-- Misc -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="logo_titch_corp.png" />
+
+<!-- Import Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=JetBrains+Mono:wght@300&family=Montserrat:wght@800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<!-- Schema.ORG -->
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org/", 
+	  "@type": "BreadcrumbList", 
+	  "itemListElement": [{
+	    "@type": "ListItem", 
+	    "position": 1, 
+	    "name": "TITCH's Portofolio",
+	    "item": "https://eltitch.github.io/titch"  
+	  },{
+	    "@type": "ListItem", 
+	    "position": 2, 
+	    "name": "Official Website",
+	    "item": "https://titch.github.io"  
+	  }]
+	}
+</script>
+<style type="text/css">
+html {scroll-behavior: smooth;user-select: none}
+body {margin: 0;padding: 0;background-color: #000000; background-image: url("resources/png/bg_pattern.png");font-family: 'Roboto', sans-serif;}
+.second-div {
+	width: calc(90% - 30px);
+	margin: 0px auto 15px auto;
+	display: flex;
+	flex-direction: row;
+	background: #000000;
+	padding: 15px;
+	border-radius: 0px 0px 8px 8px;
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.18);
+}
+.col1 {
+	width: 25%
+}
+.col2 {
+	width: 25%
+}
+.col3 {
+	width: 25%
+}
+.col4 {
+	width: 25%
+}
+.square-big {
+	width: 100%;
+	padding-top: 100%;
+	position: relative;
+	overflow: hidden
+}
+.square-small-container {
+	width: 100%;
+	padding-top: 50%;
+	display: flex;
+	position: relative
+}
+.square-small-1 {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden
+}
+.square-small-2 {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	overflow: hidden
+}
+.square-big img {
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	outline: 3px solid #ffffff;
+	transition-duration: 0.2s
+}
+.square-small-1 img {
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	outline: 3px solid #ffffff;
+	transition-duration: 0.2s
+}
+.square-small-2 img {
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	outline: 3px solid #ffffff;
+	transition-duration: 0.2s
+}
+.square-big img:hover {transform: scale(0.96);} .square-small-1 img:hover {transform: scale(0.94)} .square-small-2 img:hover {transform: scale(0.94)}
+.nav-itembox:hover {background-color: #000000}
+.nav-itembox:hover h2 {color: White;}
+.nav-logodiv img:hover {transform: scale(1.02);}
+nav {
+	width: calc(100% - 12px);
+	top: 4px;
+	left: 6px;
+	height: 52px;
+	margin: auto;
+	background-color: #ffffff;
+	position: fixed;
+	z-index: 100;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.18);
+	border-radius: 8px;
+}
+.nav-itembox h2 {
+	display: inline;
+	font-size: 20pt;
+	color: rgba(0,0,0,1);
+	transition: all 0.2s ease-in-out;
+	font-weight: normal;
+}
+.nav-logodiv {
+	width: 25%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav-logodiv img {
+	height: 50px;
+	width: auto;
+	align-items: center;
+	margin-top: 5px;
+	transition: all 0.2s ease-in-out;
+}
+.nav-itembox {
+	cursor: pointer;
+	width: 25%;
+	height: 70px;
+	line-height: 52px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	float: left;
+	transition: all 0.2s ease-in-out;
+}
+.nav-navdiv {width: 58%;height: 100%;float: left;}
+.nav-helper {width: 100%;height: 100%;overflow: hidden;}
+
+::-webkit-resizer {
+	display: block;
+	width: 5px;
+	height: 5px;
+	background-image: url("resources/png/resize.png");
+	background-size: 65% 65%;
+	background-repeat: no-repeat;
+}
+::-webkit-scrollbar {width: 8px;}
+::-webkit-scrollbar-track {background: #ffffff;border-radius: 200px;}
+::-webkit-scrollbar-thumb {background: #ffffff;border-radius: 200px;}
+::-webkit-scrollbar-thumb:hover {background: #ffffff;}
+
+.first-div {
+	margin: 150px auto 160px auto;
+	width: 100%;
+	display: flex;
+}
+.split-in-2b {
+	width: 100%;
+	display: flex
+}
+.filler {
+	width: 50%;
+	text-align: center;
+}
+.filler h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 46pt;
+	color: white;
+	margin: 0px 0px 15px 0px 
+}
+.filler p {
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16pt;
+}
+.filler img {
+	width: 50%;
+}
+.titleh2 {
+	background-color: #ffffff;
+	width: calc(90% - 30px);
+	font-size: 25pt;
+	margin: 0px auto 0px auto;
+	padding: 5px 15px 5px 15px;
+	border-radius: 8px 8px 0px 0px;
+	color: black
+}
+[id] {
+	scroll-margin-top: 66px;
+}
+
+.third-div {
+	width: calc(90% - 30px);
+	margin: 0px auto 15px auto;
+	display: flex;
+	flex-direction: row;
+	background: #000000;
+	padding: 15px;
+	border-radius: 0px 0px 8px 8px;
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.18);
+}
+.modalcontainer {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.modal {
+	background-color: #121212;
+	width: 25%;
+	height: 450px;
+	margin: 0px 2% 0px 2%;
+	border-radius: 8px
+}
+.modal-first-half {
+	width: 160px;
+	height: 160px;
+	background-color: #000000;
+	margin: 10px auto;
+	border-radius: 200px;
+	overflow: hidden
+}
+.modal-first-half img {
+	width: 100%
+}
+.modal-title {
+	width: 100%;
+	font-family: 'Heebo', sans-serif;
+	font-size: 16pt;
+	text-align: center;
+	color: white
+}
+.modal-text {
+	width: calc(100% - 40px);
+	color: rgba(255, 255, 255, 0.5);
+	padding: 0px 20px 0px 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13pt;
+	text-align: justify
+}
+.icon-container {
+	width: 100%;
+	height: 50px;
+	margin: 10px 0px 20px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.icon-box {
+	width: 45px;
+	height: 45px;
+	margin: 0px 10px 0px 10px;
+	transition: 0.2s ease-in-out
+}
+.icon-box img {
+	width: 100%;
+}
+.icon-box:hover {
+	transform: scale(1.15)
+}
+.nav-donatediv a {text-decoration: none}
+.nav-donatediv {width: 400px;height: 100%; margin: -52px 1% 0px 0px; float: right}
+.nav-donatediv a div p i, .nav-itembox i {font-size: 12pt;}
+.nav-donatediv a div:hover {transform: scale(1.02);box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.18);}
+.nav-donatediv a div {
+	width: 200px;
+	height: 34px;
+	margin: 9px auto 9px auto;
+	text-align: center;
+	border-radius: 4px;
+	background-color: #ffffff;
+	line-height: 36px;
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.18);
+	transition: all 0.2s ease-in-out;
+}
+.nav-donatediv a div p {
+	margin: 0;
+	padding: 0px 15px 0px 15px ;
+	font-size: 12pt;
+	font-weight: 500;
+	color: black;
+}
+.mobile-nav {display: none}
+.mobile-nav-img {display: none}
+
+/* For Smart-phones */
+@media (max-width: 480px) {
+	nav {display: none}
+	.mobile-nav-img {width: 100%; text-align: center; display: block; margin-bottom: 50px}
+	.mobile-nav-img img {width: 100%;margin-left: -30px}
+	.mobile-nav {
+		background-color: #000000;
+		width: 100%;
+		height: 70px;
+		position: fixed;
+		left: 0;
+		right: 0;
+		margin: auto;
+		bottom: 0;
+		z-index: 200;
+		box-shadow: 0px -3px 12px 0px rgba(0,0,0,0.28);
+		display: flex;
+		justify-content: center
+	}
+	.mobile-nav-div, .mobile-nav-div2 {
+		width: 25%;
+		text-align: center;
+	}
+	.mobile-nav-div img, .mobile-nav-div2 img {
+		height: 100%;
+	}
+	.mobile-nav-div:hover {
+		background-color: #ffffff
+	}
+	.mobile-nav-div2:hover {
+		background-color: #ffffff
+	}
+	.first-div {
+		margin: 0px auto 30px auto;
+	}
+	.split-in-2b {
+		display: block
+	}
+	.filler {
+		width: 100%;
+	}
+	.filler h1 {font-size: 20pt}
+	.filler p {font-size: 14pt;}
+	.discord-widget {
+		width: 90%
+	}
+	.discord-users-online {
+		height: 40px;
+		font-size: 10pt;
+		line-height: 40px;
+	}
+	.discord-users-online::before {
+		font-size: 10pt;
+	}
+	.imgboxlogo img {
+		margin: 5px auto 0px auto;
+		height: 30px;
+	}
+	.discord-join {
+		height: 30px;
+		line-height: 30px;
+		font-size: 12pt;
+	}
+	[id] {
+		scroll-margin-top: 200px;
+	}
+	.second-div {
+		flex-wrap: wrap;
+		margin-bottom: 30px
+	}
+	.col1, .col2, .col3, .col4 {flex: 0 0 50%}
+	.third-div {
+		margin-bottom: 100px
+	}
+	.titleh2 {
+		height: 30px;
+		line-height: 30px;
+		font-size: 14pt;
+	}
+	.modalcontainer {
+		flex-wrap: wrap;
+	}
+	.modal-first-half {width: 128px; height: 128px}
+	.modal {
+		flex: 0 0 100%;
+		margin: 10px 0px 10px 0px;
+		height: auto;
+		padding-bottom: 25px;
+	}
+	.modal-title {font-size: 14pt; margin-bottom: 10px}
+	.modal-text {font-size: 12pt;}
+	.icon-container {
+		height: 30px;
+	}
+	.icon-box {
+		width: 100px;
+		margin: 5px auto 5px auto;
+		text-align: center;
+	}
+	.icon-box img {height: 100%; width: auto; text-align: center}
+	.bgdiscord {height: 256px}
+}
+
+/* For Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+	nav {display: none}
+	.mobile-nav-img {width: 100%; text-align: center; display: block; margin-bottom: 50px}
+	.mobile-nav-img img {width: 100%;margin-left: -30px}
+	.mobile-nav {
+		background-color: #000000;
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		left: 0;
+		right: 0;
+		margin: auto;
+		bottom: 0;
+		z-index: 200;
+		box-shadow: 0px -3px 12px 0px rgba(0,0,0,0.28);
+		display: flex;
+		justify-content: center
+	}
+	.mobile-nav-div, .mobile-nav-div2 {
+		width: 25%;
+		text-align: center;
+	}
+	.mobile-nav-div img, .mobile-nav-div2 img {
+		height: 100%;
+	}
+	.mobile-nav-div:hover {
+		background-color: #ffffff
+	}
+	.mobile-nav-div2:hover {
+		background-color: #ffffff
+	}
+	.first-div {
+		margin: 0px auto 30px auto;
+	}
+	.split-in-2b {
+		display: block
+	}
+	.filler {
+		width: 100%;
+	}
+	.filler h1 {font-size: 22pt}
+	.filler p {font-size: 16pt;}
+	.discord-widget {
+		width: 70%
+	}
+	.discord-users-online {
+		height: 40px;
+		font-size: 12pt;
+		line-height: 40px;
+	}
+	.discord-users-online::before {
+		font-size: 12pt;
+	}
+	.imgboxlogo img {
+		margin: 5px auto 0px auto;
+		height: 30px;
+	}
+	.discord-join {
+		height: 30px;
+		line-height: 30px;
+		font-size: 14pt;
+	}
+	[id] {
+		scroll-margin-top: 200px;
+	}
+	.second-div {
+		flex-wrap: wrap;
+		margin-bottom: 30px
+	}
+	.col1, .col2, .col3, .col4 {flex: 0 0 50%}
+	.third-div {
+		margin-bottom: 130px
+	}
+	.titleh2 {
+		height: 30px;
+		line-height: 30px;
+		font-size: 16pt;
+	}
+	.modalcontainer {
+		flex-wrap: wrap;
+	}
+	.modal-first-half {width: 128px; height: 128px}
+	.modal {
+		flex: 0 0 70%;
+		margin: 10px 0px 10px 0px;
+		height: auto;
+		padding-bottom: 25px;
+	}
+	.modal-title {font-size: 16pt; margin-bottom: 10px}
+	.modal-text {font-size: 14pt;}
+	.icon-container {
+		height: 30px;
+	}
+	.icon-box {
+		width: 100px;
+		margin: 5px auto 5px auto;
+		text-align: center;
+	}
+	.icon-box img {height: 100%; width: auto; text-align: center}
+}
+
+/* For Laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+	.nav-helper {overflow: visible}
+	.nav-logodiv img {
+		height: 30px;
+		margin-left: -20px
+	}
+	.nav-navdiv {width: 45%}
+	.nav-itembox {width: 33.3%}
+	.nav-itembox h1 {font-size: 18pt}
+	.nav-donatediv {width: 28%; margin-top: 0px}
+	.first-div {margin: 80px auto 50px auto}
+	.filler h1 {font-size: 22pt}
+	.filler p {font-size: 16pt}
+	.titleh2 {font-size: 18pt}
+	.second-div {margin-bottom: 50px}
+	.modal {flex: 0 0 30%; height: 500px}
+	.modal-title {font-size: 16pt}
+	.modal-text {font-size: 10pt}
+}
+</style>
+</head>
+<body>
+	<!-- ========================================== NAVIGATION BAR START ========================================== -->
+	<nav>
+		<div class="nav-helper">
+			<div class="nav-logodiv">
+				<a href="index.html">
+					<div class="nav-imgbox">
+						<img src="fichiers/titch.png" alt="TITCH's Portofolio">
+					</div>
+				</a>
+			</div>
+
+			<div class="nav-navdiv">
+				<a href="#Home"><div class="nav-itembox"><h2>Home</h2></div></a>
+				<a href="#Project_Gallery"><div class="nav-itembox"><h2>Projects</h2></div></a>
+				<a href="#About"><div class="nav-itembox"><h2>About</h2></div></a>
+			</div>
+		</div>
+	</nav>
+<!-- ========================================== NAVIGATION BAR END ========================================== -->
+<!-- ========================================== NAVIGATION BAR START ========================================== -->
+	<div class="mobile-nav-img"><img src="fichiers/titch.png" alt="TITCH's Portofolio"></div>
+	<div class="mobile-nav">
+		<div class="mobile-nav-div"><a href="#Home"><img src="https://imgur.com/jYtVFj9.png" alt="Home"></a></div>
+		<div class="mobile-nav-div"><a href="#Project_Gallery"><img src="https://imgur.com/tJo5bNp.png" alt="Projects"></a></div>
+		<div class="mobile-nav-div"><a href="#About"><img src="https://imgur.com/ETcu7AP.png" alt="About"></a></div>
+	</div>
+<!-- ========================================== NAVIGATION BAR END ========================================== -->
+	<div class="first-div" id="Home">
+		<div class="split-in-2b">
+			<div class="filler">
+				<h1>Welcome to my portfolio!</h1>
+				<p>Join my Discord server  for never miss anything.</p>
+				<img src="fichiers/logo_titch_ind.png" alt="TITCH INDUSTRIES Logo">
+			</div>
+			<div class="discord-widget"></div>
+		</div>
+	</div>
+	<h2 class="titleh2" id="Project_Gallery">Project Gallery</h2>
+	<div class="second-div">
+		<div class="col1">
+			<div class="square-big">
+				<a target="_blank" href="https://www.curseforge.com/minecraft/texture-packs/titchs-pack">
+				<img src="fichiers/titch_pack.png" alt="TITCH Minecraft Projects | TITCH's Texture Pack"></a>
+
+			</div>
+		</div>
+	</div>
+
+	<h2 class="titleh2" id="About">About Me</h2>
+	<div class="third-div">
+		<div class="modalcontainer">
+			<div class="modal">
+				<div class="modal-first-half"><img src="fichiers/pp.png" alt="About Myself"></div>
+				<div class="modal-title">About Myself</div>
+				<div class="modal-text">
+I'm TITCH, I'm an French Human.
+				</div>
+			</div>
+			<div class="modal">
+				<div class="modal-first-half"><img src="fichiers/sablier.png" alt=" My Story"></div>
+				<div class="modal-title">My Story</div>
+				<div class="modal-text">
+I have no background.
+				</div>
+			</div>
+			<div class="modal">
+				<div class="modal-first-half"><img src="fichiers/terre.png" alt="Where To Find Me / Contact"></div>
+				<div class="modal-title">Where To Find Me</div>
+				<div class="modal-text" style="text-align: center">For Content:</div>
+					<div class="icon-container">
+						<div class="icon-box"><a href="https://www.planetminecraft.com/member/eltitch/" target="_blank"><img src="fichiers/pm.png" alt="Planet Minecraft" title="Planet Minecraft"></a></div>
+						<div class="icon-box"><a href="https://www.curseforge.com/members/eltitch/projects" target="_blank"><img src="fichiers/cf.png" alt="Curse Forge" title="CurseForge"></a></div>
+						<div class="icon-box"><a href="https://www.reddit.com/user/ElTitch" target="_blank"><img src="fichiers/r.png" alt="Reddit" title="Reddit"></a></div>
+						<div class="icon-box"><a href="https://www.youtube.com/channel/UCwXkqJyDkoz4r20xu7RuwRw" target="_blank"><img src="fichiers/yt.png" alt="Youtube" title="YouTube"></a></div>
+					</div>
+				<div class="modal-text" style="text-align: center">For Contact:</div>
+					<div class="icon-container">
+						<div class="icon-box"><a href="https://discord.com/invite/aUDS5qvmCS" target="_blank"><img src="fichiers/d.png" alt="Discord" title="Discord"></a></div>
+						<div class="icon-box"><a href="https://www.instagram.com/titch.el/" target="_blank"><img src="fichiers/ig.png" alt="Instagram" title="Instagram"></a></div>
+						<div class="icon-box"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=ihavenomailadressyet@gmail.com&su=Website%20Private%20Message" target="_blank"><img src="fichiers/gm.png" alt="Gmail" title="Gmail"></a></div>
+					</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
